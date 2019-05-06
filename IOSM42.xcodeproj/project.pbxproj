@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D131DB5A2280BAC300A25426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D131DB592280BAC300A25426 /* Assets.xcassets */; };
+		D131DB5C2280BBE900A25426 /* FTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D131DB5B2280BBE900A25426 /* FTDemoViewController.swift */; };
 		D1EC452E22809DCE00C7F592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC452D22809DCE00C7F592 /* AppDelegate.swift */; };
 		D1EC453022809DCE00C7F592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC452F22809DCE00C7F592 /* ViewController.swift */; };
 		D1EC453322809DCE00C7F592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EC453122809DCE00C7F592 /* Main.storyboard */; };
@@ -37,8 +39,6 @@
 		D1EC45AB22809F4E00C7F592 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EC459D22809F4E00C7F592 /* NSObject+CZRuntime.m */; };
 		D1EC45AC22809F4E00C7F592 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EC459E22809F4E00C7F592 /* UIViewController+CZAddition.m */; };
 		D1EC45AD22809F4E00C7F592 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EC45A122809F4E00C7F592 /* UIButton+CZAddition.m */; };
-		D1EC45AF22809FA000C7F592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EC45AE22809FA000C7F592 /* Assets.xcassets */; };
-		D1EC45B32280A0EA00C7F592 /* FTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC45B22280A0EA00C7F592 /* FTDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D131DB592280BAC300A25426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../.Trash/M42/MOBL42/MOBL42/Assets.xcassets; sourceTree = "<group>"; };
+		D131DB5B2280BBE900A25426 /* FTDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTDemoViewController.swift; sourceTree = "<group>"; };
 		D1EC452A22809DCE00C7F592 /* IOSM42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSM42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EC452D22809DCE00C7F592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EC452F22809DCE00C7F592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,8 +110,6 @@
 		D1EC459F22809F4E00C7F592 /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
 		D1EC45A022809F4E00C7F592 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
 		D1EC45A122809F4E00C7F592 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
-		D1EC45AE22809FA000C7F592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../xcode/项目/M42/MOBL42/MOBL42/Assets.xcassets"; sourceTree = "<group>"; };
-		D1EC45B22280A0EA00C7F592 /* FTDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FTDemoViewController.swift; path = "../../../../../../../xcode/项目/M42/MOBL42/MOBL42/Classes/View(视图和控制器)/Main/Test/FTDemoViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,7 @@
 				D1EC452D22809DCE00C7F592 /* AppDelegate.swift */,
 				D1EC452F22809DCE00C7F592 /* ViewController.swift */,
 				D1EC453122809DCE00C7F592 /* Main.storyboard */,
-				D1EC45AE22809FA000C7F592 /* Assets.xcassets */,
+				D131DB592280BAC300A25426 /* Assets.xcassets */,
 				D1EC453622809DD000C7F592 /* LaunchScreen.storyboard */,
 				D1EC453922809DD000C7F592 /* Info.plist */,
 			);
@@ -258,7 +258,7 @@
 		D1EC456722809EC800C7F592 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				D1EC45B22280A0EA00C7F592 /* FTDemoViewController.swift */,
+				D131DB5B2280BBE900A25426 /* FTDemoViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -436,7 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EC453822809DD000C7F592 /* LaunchScreen.storyboard in Resources */,
-				D1EC45AF22809FA000C7F592 /* Assets.xcassets in Resources */,
+				D131DB5A2280BAC300A25426 /* Assets.xcassets in Resources */,
 				D1EC453322809DCE00C7F592 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,7 +470,6 @@
 				D1EC45A222809F4E00C7F592 /* UILabel+CZAddition.m in Sources */,
 				D1EC458522809EC800C7F592 /* UIScreen+Extensions.swift in Sources */,
 				D1EC458422809EC800C7F592 /* UIColor+Extensions.swift in Sources */,
-				D1EC45B32280A0EA00C7F592 /* FTDemoViewController.swift in Sources */,
 				D1EC45AC22809F4E00C7F592 /* UIViewController+CZAddition.m in Sources */,
 				D1EC45A722809F4E00C7F592 /* NSString+CZPath.m in Sources */,
 				D1EC458622809EC800C7F592 /* Bundle+Extensions.swift in Sources */,
@@ -489,6 +488,7 @@
 				D1EC457C22809EC800C7F592 /* FTMessageViewController.swift in Sources */,
 				D1EC458222809EC800C7F592 /* FTNavigationViewController.swift in Sources */,
 				D1EC452E22809DCE00C7F592 /* AppDelegate.swift in Sources */,
+				D131DB5C2280BBE900A25426 /* FTDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
