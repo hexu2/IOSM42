@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:"
+      name = "Assets.xcassets">
+      <Group
+         location = "group:AppIcon.appiconset"
+         name = "AppIcon.appiconset">
+         <FileRef
+            location = "group:Contents.json">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Contents.json">
+      </FileRef>
+      <Group
+         location = "group:LaunchImage.launchimage"
+         name = "LaunchImage.launchimage">
+         <FileRef
+            location = "group:Default@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Default-736h@3x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Default-568h@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Contents.json">
+         </FileRef>
+         <FileRef
+            location = "group:Default-667h@2x.png">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
-      location = "self:IOSM42.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

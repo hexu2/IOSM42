@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D131DB5A2280BAC300A25426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D131DB592280BAC300A25426 /* Assets.xcassets */; };
 		D131DB5C2280BBE900A25426 /* FTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D131DB5B2280BBE900A25426 /* FTDemoViewController.swift */; };
+		D131DB642280C09D00A25426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D131DB632280C09D00A25426 /* Assets.xcassets */; };
 		D1EC452E22809DCE00C7F592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC452D22809DCE00C7F592 /* AppDelegate.swift */; };
 		D1EC453022809DCE00C7F592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC452F22809DCE00C7F592 /* ViewController.swift */; };
 		D1EC453322809DCE00C7F592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EC453122809DCE00C7F592 /* Main.storyboard */; };
@@ -59,8 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D131DB592280BAC300A25426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../.Trash/M42/MOBL42/MOBL42/Assets.xcassets; sourceTree = "<group>"; };
 		D131DB5B2280BBE900A25426 /* FTDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTDemoViewController.swift; sourceTree = "<group>"; };
+		D131DB632280C09D00A25426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../Assets.xcassets; sourceTree = "<group>"; };
 		D1EC452A22809DCE00C7F592 /* IOSM42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSM42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EC452D22809DCE00C7F592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EC452F22809DCE00C7F592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 				D1EC452D22809DCE00C7F592 /* AppDelegate.swift */,
 				D1EC452F22809DCE00C7F592 /* ViewController.swift */,
 				D1EC453122809DCE00C7F592 /* Main.storyboard */,
-				D131DB592280BAC300A25426 /* Assets.xcassets */,
 				D1EC453622809DD000C7F592 /* LaunchScreen.storyboard */,
+				D131DB632280C09D00A25426 /* Assets.xcassets */,
 				D1EC453922809DD000C7F592 /* Info.plist */,
 			);
 			path = IOSM42;
@@ -436,7 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EC453822809DD000C7F592 /* LaunchScreen.storyboard in Resources */,
-				D131DB5A2280BAC300A25426 /* Assets.xcassets in Resources */,
+				D131DB642280C09D00A25426 /* Assets.xcassets in Resources */,
 				D1EC453322809DCE00C7F592 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +663,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W359CB4KS5;
@@ -685,6 +686,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W359CB4KS5;
