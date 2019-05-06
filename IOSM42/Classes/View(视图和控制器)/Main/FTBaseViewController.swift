@@ -10,7 +10,7 @@ import UIKit
 
 class FTBaseViewController: UIViewController {
     
-    //自定义导航条
+    //自定义导航条 -- test
 //    lazy var navigationBar:UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.ex_screenWidth, height: 64))
     lazy var navigationBar:UINavigationBar = SecondNavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.ex_screenWidth, height: 64))
     //自定义导航条目

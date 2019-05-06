@@ -40,7 +40,7 @@ class FTNavigationViewController: UINavigationController {
         super.pushViewController(viewController, animated: animated)
         
     }
-    
+        
     @objc private func popToPare() {
         print("返回。。。。")
         popViewController(animated: true)
