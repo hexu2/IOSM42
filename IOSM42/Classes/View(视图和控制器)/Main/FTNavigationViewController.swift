@@ -31,18 +31,25 @@ class FTNavigationViewController: UINavigationController {
         }
         //判断：控制器类型
         if let vc = viewController as? FTBaseViewController {
-            //
-            let btn = UIButton.ex_textButton(title: "返回", fontSize: UIFont.systemFontSize, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
-            btn.addTarget(self, action: #selector(popToPare), for: UIControl.Event.touchUpInside)
-            vc.naviItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
+            var title: String = "返回"
+            //判断控制器级数
+            if children.count == 1{
+                title = children.first?.title ?? "返回"
+            }
+            
+//            let btn = UIButton.ex_textButton(title: title, fontSize: UIFont.systemFontSize, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
+//            btn.addTarget(self, action: #selector(popToPare), for: UIControl.Event.touchUpInside)
+//            vc.naviItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
+            vc.naviItem.leftBarButtonItem = UIBarButtonItem.init(title: title, fontSize: UIFont.systemFontSize, target: self, action: #selector(popToPare), isBack: true)
         }
         
         super.pushViewController(viewController, animated: animated)
         
     }
-        
+    
+    // 返回上一级控制器
     @objc private func popToPare() {
-        print("返回。。。。")
+//        print("返回。。。。")
         popViewController(animated: true)
     }
 

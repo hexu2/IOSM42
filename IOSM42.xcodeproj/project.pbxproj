@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D131DB5C2280BBE900A25426 /* FTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D131DB5B2280BBE900A25426 /* FTDemoViewController.swift */; };
 		D131DB642280C09D00A25426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D131DB632280C09D00A25426 /* Assets.xcassets */; };
+		D131DB662281EEB100A25426 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D131DB652281EEB100A25426 /* UIBarButtonItem+Extensions.swift */; };
 		D1EC452E22809DCE00C7F592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC452D22809DCE00C7F592 /* AppDelegate.swift */; };
 		D1EC453022809DCE00C7F592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC452F22809DCE00C7F592 /* ViewController.swift */; };
 		D1EC453322809DCE00C7F592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EC453122809DCE00C7F592 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		D131DB5B2280BBE900A25426 /* FTDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTDemoViewController.swift; sourceTree = "<group>"; };
 		D131DB632280C09D00A25426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../Assets.xcassets; sourceTree = "<group>"; };
+		D131DB652281EEB100A25426 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		D1EC452A22809DCE00C7F592 /* IOSM42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSM42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EC452D22809DCE00C7F592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EC452F22809DCE00C7F592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				D1EC457222809EC800C7F592 /* UIScreen+Extensions.swift */,
 				D1EC457322809EC800C7F592 /* Bundle+Extensions.swift */,
 				D1EC457422809EC800C7F592 /* Bundle+Extensions1.swift */,
+				D131DB652281EEB100A25426 /* UIBarButtonItem+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				D1EC45A222809F4E00C7F592 /* UILabel+CZAddition.m in Sources */,
 				D1EC458522809EC800C7F592 /* UIScreen+Extensions.swift in Sources */,
 				D1EC458422809EC800C7F592 /* UIColor+Extensions.swift in Sources */,
+				D131DB662281EEB100A25426 /* UIBarButtonItem+Extensions.swift in Sources */,
 				D1EC45AC22809F4E00C7F592 /* UIViewController+CZAddition.m in Sources */,
 				D1EC45A722809F4E00C7F592 /* NSString+CZPath.m in Sources */,
 				D1EC458622809EC800C7F592 /* Bundle+Extensions.swift in Sources */,
