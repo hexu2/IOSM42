@@ -43,6 +43,9 @@ extension FTBaseViewController {
         
         //设置navbar 的渲染颜色
 //        navigationBar.barTintColor = UIColor.ex_colorWithHex(rgbValue: 0xF6F6F6)
+        
+        //设置navigationBar字体渲染颜色
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
     }
     
 }
