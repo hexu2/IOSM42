@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// 主控制器基类控制器
 class FTBaseViewController: UIViewController{
     
     /// 表格视图
@@ -40,29 +41,23 @@ class FTBaseViewController: UIViewController{
 
 //设置界面
 extension FTBaseViewController{
-
     
     @objc func setupUI(){
-    
         view.backgroundColor = UIColor.ex_randomColor()
-        
-        
-        
         setNavigationBar()
         setupTableView()
-        //设置数据源和代理
-        tableView?.dataSource = self
-        tableView?.delegate = self
-        
     }
-    
     
     private func setupTableView(){
         
         tableView = UITableView(frame: view.bounds, style: .plain)
         
-        view.addSubview(tableView!)
+//        view.addSubview(tableView!)
         view.insertSubview(tableView!, belowSubview: navigationBar)
+        
+        //设置数据源和代理
+        tableView?.dataSource = self
+        tableView?.delegate = self
     }
     
     
@@ -83,6 +78,7 @@ extension FTBaseViewController{
 }
 
 extension FTBaseViewController: UITableViewDataSource,UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
