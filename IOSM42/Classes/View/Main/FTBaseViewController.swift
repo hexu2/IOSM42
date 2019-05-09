@@ -10,11 +10,12 @@ import UIKit
 
 class FTBaseViewController: UIViewController {
     
-    //自定义导航条 -- test
+    /// 表格视图
+    var tableView: UITableView?
     
-//    lazy var navigationBar:UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.ex_screenWidth, height: 64))
+    ///自定义导航条 -- test
     lazy var navigationBar:UINavigationBar = SecondNavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.ex_screenWidth, height: 64))
-    //自定义导航条目
+    ///自定义导航条目
     lazy var naviItem = UINavigationItem()
     
     override func viewDidLoad() {
@@ -37,15 +38,35 @@ extension FTBaseViewController {
     
         view.backgroundColor = UIColor.ex_randomColor()
         
+        
+        
+        setNavigationBar()
+        setupTableView()
+        
+    }
+    
+    
+    private func setupTableView(){
+        
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        
+        view.addSubview(tableView!)
+        view.insertSubview(tableView!, belowSubview: navigationBar)
+    }
+    
+    
+    /// 设置导航条
+    private func setNavigationBar(){
         //添加自定义导航条
         view.addSubview(navigationBar)
         navigationBar.items = [naviItem]
         
         //设置navbar 的渲染颜色
-//        navigationBar.barTintColor = UIColor.ex_colorWithHex(rgbValue: 0xF6F6F6)
+        navigationBar.barTintColor = UIColor.ex_colorWithHex(rgbValue: 0xF6F6F6)
         
         //设置navigationBar字体渲染颜色
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+        
     }
     
 }
