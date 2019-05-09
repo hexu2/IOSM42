@@ -81,7 +81,7 @@ extension FTBaseViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableView()
+        return UITableViewCell
     }
     
     
