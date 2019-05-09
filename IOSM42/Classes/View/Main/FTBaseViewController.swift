@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FTBaseViewController: UIViewController {
+class FTBaseViewController: UIViewController{
     
     /// 表格视图
     var tableView: UITableView?
@@ -32,7 +32,8 @@ class FTBaseViewController: UIViewController {
 }
 
 //设置界面
-extension FTBaseViewController {
+extension FTBaseViewController{
+
     
     @objc func setupUI(){
     
@@ -42,6 +43,9 @@ extension FTBaseViewController {
         
         setNavigationBar()
         setupTableView()
+        //设置数据源和代理
+        tableView?.dataSource = self
+        tableView?.delegate = self
         
     }
     
@@ -68,6 +72,18 @@ extension FTBaseViewController {
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         
     }
+    
+}
+
+extension FTBaseViewController: UITableViewDataSource,UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableView()
+    }
+    
     
 }
 
