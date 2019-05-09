@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 /// 主控制器
 class FTMainViewController: UITabBarController {
@@ -19,6 +20,14 @@ class FTMainViewController: UITabBarController {
         setupComposeButton()
         
     }
+    
+    
+    /// 设置设备方向
+    // portrait 竖
+    // landscape 横
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
     //设置私有控件
     private lazy var composeButton: UIButton = UIButton.ex_imageButton(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
     
@@ -26,8 +35,14 @@ class FTMainViewController: UITabBarController {
     //@objc 允许函数在运行时通过OC的消息机制被调用
     @objc private func composeStauts(){
         print("发布动态")
+        
+        let vc = UIViewController()
+        vc.view.backgroundColor = UIColor.ex_randomColor()
+        let nav = UINavigationController(rootViewController: vc)
+        present(nav, animated: true, completion: nil)
     }
 }
+
 
 // 相近的功能的函数，放在extension中便于维护,使用extension 切分代码块
 //设置界面

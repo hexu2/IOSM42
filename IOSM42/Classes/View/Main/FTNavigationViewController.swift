@@ -25,7 +25,7 @@ class FTNavigationViewController: UINavigationController {
     ///   - animated: <#animated description#>
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         print(viewController)
-        //判断：不是栈底才需要隐藏，根控制器不需要隐藏
+        //判断：不是栈底才需要隐藏，根控制器不需要隐
         if children.count > 0 {
             viewController.hidesBottomBarWhenPushed = true            
         }
@@ -37,9 +37,6 @@ class FTNavigationViewController: UINavigationController {
                 title = children.first?.title ?? "返回"
             }
             
-//            let btn = UIButton.ex_textButton(title: title, fontSize: UIFont.systemFontSize, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
-//            btn.addTarget(self, action: #selector(popToPare), for: UIControl.Event.touchUpInside)
-//            vc.naviItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
             vc.naviItem.leftBarButtonItem = UIBarButtonItem.init(title: title, fontSize: UIFont.systemFontSize, target: self, action: #selector(popToPare), isBack: true)
         }
         
