@@ -26,7 +26,7 @@ class FTMainViewController: UITabBarController {
     // portrait 竖
     // landscape 横
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscape
+        return .portrait
     }
     //设置私有控件
     private lazy var composeButton: UIButton = UIButton.ex_imageButton(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
