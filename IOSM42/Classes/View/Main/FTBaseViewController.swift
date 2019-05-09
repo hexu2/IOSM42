@@ -21,6 +21,13 @@ class FTBaseViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        loadData()
+    }
+    
+    
+    /// 加载数据，具体的内容由子类负责实现
+    func loadData(){
+        
     }
     
     //重写title 的set 方法

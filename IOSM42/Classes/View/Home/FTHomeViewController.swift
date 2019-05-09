@@ -10,9 +10,14 @@ import UIKit
 
 class FTHomeViewController: FTBaseViewController {
     
+    private lazy var statuslist = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
+    
     
     @objc func showFriends(){
         print("show friends...")
@@ -25,10 +30,8 @@ class FTHomeViewController: FTBaseViewController {
 extension FTHomeViewController {
     override func setupUI() {
         super.setupUI()
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriends))
         let btn = UIButton.ex_textButton(title: "好友", fontSize: UIFont.systemFontSize, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
         btn.addTarget(self, action: #selector(showFriends), for: UIControl.Event.touchUpInside)
         naviItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
     }
 }
