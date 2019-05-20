@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 /// 主控制器
 class FTMainViewController: UITabBarController {
